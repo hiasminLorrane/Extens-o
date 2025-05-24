@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentário Fotográfico - Comunidade Sustentável</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #388e3c;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #c8e6c9;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .hero {
+      text-align: center;
+      background: #c8e6c9;
+      padding: 2rem;
+      border-radius: 8px;
+    }
+    .hero img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+    figure {
+      margin: 0;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    figcaption {
+      font-size: 0.9rem;
+      text-align: center;
+      color: #555;
+      margin-top: 5px;
+    }
+    .relatos, .sobre {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-top: 1.5rem;
+    }
+    blockquote {
+      font-style: italic;
+      color: #4caf50;
+      text-align: center;
+      margin: 2rem 0;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background-color: #388e3c;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    form button:hover {
+      background-color: #2e7d32;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #2e7d32;
+      color: white;
+      margin-top: 2rem;
+    }
+    /* Responsividade */
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+      .hero, .relatos, .sobre {
+        padding: 1rem;
+      }
+    }
+    /* Botão voltar ao topo */
+    #topo-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #2e7d32;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Documentário Fotográfico</h1>
+    <p>ODS 11 - Cidades e Comunidades Sustentáveis</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#relatos">Relatos</a>
+    <a href="#sobre">Sobre</a>
+  </nav>
+
+  <section id="inicio" class="hero">
+    <h2>Explorando a Realidade da Comunidade</h2>
+    <p>Este projeto tem como objetivo registrar, por meio de imagens e relatos, os desafios e as potencialidades da comunidade local em busca de uma cidade mais sustentável.</p>
+    <img src="img/comu03.jpeg" alt="Imagem da comunidade">
+  </section>
+
+  <section id="galeria">
+    <h2>Galeria de Fotos</h2>
+    <div class="gallery">
+      <figure>
+        <img src="img/ar01.jpeg" alt="Comunidade reunida na praça">
+        <figcaption>Comunidade reunida na praça</figcaption>
+      </figure>
+      <figure>
+        <img src="img/comu01.jpeg" alt="Ponto de descarte de lixo">
+        <figcaption>Ponto de descarte de lixo</figcaption>
+      </figure>
+      <figure>
+        <img src="img/img04.jpeg" alt="Placa sobre descarte correto">
+        <figcaption>Placa informativa sobre descarte correto</figcaption>
+      </figure>
+      <figure>
+        <img src="img/comu02.jpeg" alt="Lixo pegando fogo">
+        <figcaption>Situação de incêndio em lixo</figcaption>
+      </figure>
+      <figure>
+        <img src="img/img05.jpeg" alt="Lixo pegando fogo">
+        <figcaption>Lixo em combustão – risco ambiental</figcaption>
+      </figure>
+      <figure>
+        <img src="img/comu03.jpeg" alt="Lixo pegando fogo novamente">
+        <figcaption>Foco de incêndio urbano</figcaption>
+      </figure>
+      <figure>
+        <img src="img/fogo01.jpeg" alt="Lixo pegando fogo">
+        <figcaption>Imagem registrada de descarte irregular</figcaption>
+      </figure>
+      <figure>
+        <img src="img/img01.jpeg" alt="Lixo pegando fogo">
+        <figcaption>Consequência da falta de conscientização</figcaption>
+      </figure>
+      <figure>
+        <img src="img/img04.jpeg" alt="Lixo pegando fogo">
+        <figcaption>Reforço sobre o problema dos resíduos</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="relatos" class="relatos">
+    <h2>Relatos e Observações</h2>
+    <p>Durante o registro, observamos grande envolvimento da comunidade em práticas sustentáveis, como o uso correto do ponto de descarte. No entanto, situações preocupantes, como o lixo incendiado, também foram flagradas. Isso mostra a importância de ações de conscientização contínuas.</p>
+    <blockquote>"Cuidar da comunidade é cuidar de nós mesmos."</blockquote>
+  </section>
+
+  <section id="contato" class="relatos">
+    <h2>Deixe seu Relato</h2>
+    <form>
+      <label>Nome:</label><br>
+      <input type="text" name="nome" required><br>
+      <label>Comentário:</label><br>
+      <textarea name="comentario" rows="4" required></textarea><br>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <section id="sobre" class="sobre">
+    <h2>Sobre o Projeto</h2>
+    <p>Este documentário foi criado com base nos Objetivos de Desenvolvimento Sustentável (ODS), com foco no ODS 11. A proposta foi valorizar a comunidade, dar voz aos seus membros e despertar a consciência ambiental.</p>
+    <p>Colaboradores: Hiasmin Lorrane Cardoso e membros da comunidade local.</p>
+    <img src="https://sdgs.un.org/sites/default/files/styles/goal_hero/public/2020-07/Goal-11.png" alt="ODS 11 - Cidades Sustentáveis" width="100">
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Documentário Comunitário | EcoBusque</p>
+  </footer>
+
+  <button id="topo-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑ Topo</button>
+</body>
+</html>
